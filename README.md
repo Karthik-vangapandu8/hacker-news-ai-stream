@@ -2,6 +2,8 @@
 
 A local near-real-time pipeline that polls Hacker News for stories, classifies headlines with Ollama, stores the results in PostgreSQL, and displays them in a Streamlit dashboard.
 
+![Hacker News AI Stream dashboard](assets/dashboard.png)
+
 ## Data flow
 
 Hacker News API -> Python polling producer -> in-memory event queue -> Ollama topic classifier -> PostgreSQL -> Streamlit dashboard
